@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .container {
+    width: 608px;
+    margin: auto;
+  }
+  
+  .firstrow, .secondrow {
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .content {
+    height: 250px;
+    width: 200px;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .card {
+    height: 250px;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .pd1 {
+    background-image: url(pd1.jpg);
+  }
+  
+  .pd2 {
+    background-image: url(pd2.jpg);
+  }
+  
+  .pd3 {
+    background-image: url(pd3.jpg);
+  }
+  
+  .sconto {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .pd1>.sconto,.pd3>.sconto {
+    background-color: green;
+  }
+  
+  .pd2>.sconto {
+    background-color: red;
+  }
+  
+  .wishlist {
+    color: red;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+    display: none;
+    position: absolute;
+    bottom: 2px;
+  }
+  
+  
+  .content:hover .wishlist {
+    display: block;
+  }
+  
